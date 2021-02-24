@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.turbobooks.view.additem.TurboBooksAddItemController">
+   <children>
+      <VBox fx:id="addItemBox" layoutX="184.0" prefHeight="200.0" prefWidth="227.0" style="-fx-background-color: GREY; -fx-border-color: white; -fx-border-radius: 0; -fx-border-width: 2;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="37.0" prefWidth="221.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Type:">
+                     <HBox.margin>
+                        <Insets left="15.0" right="15.0" top="5.0" />
+                     </HBox.margin>
+                  </Text>
+                  <JFXComboBox fx:id="type" focusColor="#0ec9ed" maxWidth="1.7976931348623157E308" onAction="#setItemType" prefHeight="27.0" prefWidth="127.0" promptText="BOOK" unFocusColor="WHITE" />
+               </children>
+            </HBox>
+            <HBox prefHeight="31.0" prefWidth="221.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Title:">
+                     <HBox.margin>
+                        <Insets left="15.0" right="15.0" top="5.0" />
+                     </HBox.margin>
+                  </Text>
+                  <JFXTextField fx:id="title" focusColor="#0ec9ed" unFocusColor="WHITE" />
+               </children>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="221.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="UUID:">
+                     <HBox.margin>
+                        <Insets left="15.0" right="15.0" top="5.0" />
+                     </HBox.margin>
+                  </Text>
+                  <JFXTextField fx:id="uuid" focusColor="#0ec9ed" unFocusColor="WHITE" />
+               </children>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="221.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Author First Name:">
+                     <HBox.margin>
+                        <Insets left="15.0" right="15.0" top="5.0" />
+                     </HBox.margin>
+                  </Text>
+                  <JFXTextField fx:id="firstname" focusColor="#0ec9ed" unFocusColor="WHITE" />
+               </children>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="221.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Author Last Name:">
+                     <HBox.margin>
+                        <Insets left="15.0" right="15.0" top="5.0" />
+                     </HBox.margin>
+                  </Text>
+                  <JFXTextField fx:id="lastname" focusColor="#0ec9ed" unFocusColor="WHITE" />
+               </children>
+            </HBox>
+            <HBox prefHeight="12.0" prefWidth="221.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="ISBN:">
+                     <HBox.margin>
+                        <Insets left="15.0" right="15.0" top="5.0" />
+                     </HBox.margin>
+                  </Text>
+                  <JFXTextField fx:id="isbn" focusColor="#0ec9ed" onMouseClicked="#fireReset" prefHeight="15.0" prefWidth="151.0" unFocusColor="#fcfcfc" />
+               </children>
+            </HBox>
+            <HBox prefHeight="33.0" prefWidth="221.0">
+               <children>
+                  <JFXButton fx:id="submitBtn" buttonType="RAISED" onAction="#fireSubmit" ripplerFill="#3af2ff" style="-fx-border-color: white; -fx-border-radius: 3;" text="ADD" textFill="WHITE">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="160.0" top="15.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <JFXSpinner fx:id="spinner" layoutX="300.0" layoutY="92.0" AnchorPane.leftAnchor="90.0" />
+   </children>
+</AnchorPane>

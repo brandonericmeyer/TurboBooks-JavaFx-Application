@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.turbobooks.view.checkout.TurboBooksCheckoutController">
+   <children>
+      <VBox fx:id="checkoutBox" layoutX="194.0" layoutY="10.0" prefHeight="200.0" prefWidth="227.0" style="-fx-background-color: GREY; -fx-border-color: white; -fx-border-radius: 0; -fx-border-width: 2;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="30.0" prefWidth="221.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Item UUID:">
+                     <HBox.margin>
+                        <Insets left="15.0" right="15.0" top="10.0" />
+                     </HBox.margin>
+                  </Text>
+                  <JFXTextField fx:id="uuid" focusColor="#0ec9ed" onMouseClicked="#fireReset" unFocusColor="WHITE" />
+               </children>
+            </HBox>
+            <HBox prefHeight="25.0" prefWidth="221.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Member Id:">
+                     <HBox.margin>
+                        <Insets left="15.0" right="15.0" top="10.0" />
+                     </HBox.margin>
+                  </Text>
+                  <JFXTextField fx:id="memberId" focusColor="#0ec9ed" onMouseClicked="#fireReset" unFocusColor="#fcfcfc" />
+               </children>
+            </HBox>
+            <HBox prefHeight="33.0" prefWidth="221.0">
+               <children>
+                  <JFXButton fx:id="submitBtn" buttonType="RAISED" onAction="#fireSubmit" ripplerFill="#3af2ff" style="-fx-border-color: white; -fx-border-radius: 3;" text="CHECKOUT" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="120.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets top="100.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <JFXSpinner fx:id="spinner" layoutX="227.0" layoutY="81.0" AnchorPane.leftAnchor="90.0" />
+   </children>
+</AnchorPane>

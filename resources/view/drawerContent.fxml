@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="drawerBox" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="157.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.turbobooks.view.TurboBooksDrawerController">
+         <children>
+      <JFXButton fx:id="addItemBtn" buttonType="RAISED" maxWidth="1.7976931348623157E308" onMouseClicked="#fireAddItem" ripplerFill="#4ecdc4" text="ADD ITEM" textFill="WHITE">
+         <font>
+            <Font name="Open Sans Bold" size="12.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="15.0" />
+         </VBox.margin>
+      </JFXButton>
+      <JFXButton fx:id="removeBtn" buttonType="RAISED" maxWidth="1.7976931348623157E308" onMouseClicked="#fireRemoveItem" ripplerFill="#4ecdc4" text="REMOVE ITEM" textFill="WHITE">
+         <font>
+            <Font name="Open Sans Bold" size="12.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </JFXButton>
+      <JFXButton fx:id="checkoutBtn" buttonType="RAISED" maxWidth="1.7976931348623157E308" onMouseClicked="#fireCheckout" ripplerFill="#4ecdc4" text="CHECKOUT" textFill="WHITE">
+         <font>
+            <Font name="Open Sans Bold" size="12.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </JFXButton>
+         </children>
+      </VBox>
